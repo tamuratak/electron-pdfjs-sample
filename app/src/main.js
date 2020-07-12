@@ -11,7 +11,8 @@ app.on('ready', function() {
     height: 600,
     webPreferences: {
       webSecurity: false,
-      nodeIntegration: true
+      nodeIntegration: true,
+      nodeIntegrationInWorker: true
     }
   });
   mainWindow.loadURL('file://' + __dirname + '/viewer/viewer.html');
